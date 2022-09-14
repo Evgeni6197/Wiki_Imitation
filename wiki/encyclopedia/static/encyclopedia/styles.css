@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: white;
+
 }
 
 code {
@@ -10,7 +11,8 @@ code {
 h1 {
     margin-top: 0px;
     padding-top: 20px;
-}
+    
+} 
 
 textarea {
     height: 90vh;
@@ -28,11 +30,15 @@ textarea {
 }
 
 .sidebar {
-    background-color: #f0f0f0;
+    background-color: #f5f0f0; 
     height: 100vh;
     padding: 20px;
+    
 }
 
 .sidebar h2 {
     margin-top: 5px;
+    
 }
+
+

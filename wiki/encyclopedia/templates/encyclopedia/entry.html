@@ -1,14 +1,15 @@
 {% extends "encyclopedia/layout.html" %}
 
+
 {% block title %}
-    {{entry_name}}
+    {{title}}
 {% endblock %}
 
 {% block body %}
 
     {{entry_html_content|safe}}
 
-    <div style=" padding:100px; font-size: 30px;text-align: center;">
+    <div  id="entry">
         {{not_found|safe}}{{search1}}
     </div>
         

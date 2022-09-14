@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+    <form action="{% url  'new_page' %}" method="post" autocomplete='off'>
+        {% csrf_token %}
+
+        <textarea name="page_content"  placeholder="Enter the Markdown content for the page" required>{{text}}</textarea>
+        
+        <div style="width:80%; padding-right: 20px;">
+
+            <input type="text" placeholder="Enter name of the page" name="page_name" required> 
+            &nbsp;&nbsp <input type ="submit" value='Save'> 
+            &nbsp;&nbsp<snap style='color:red'>{{error_message}} </snap>                          
+            <a style='float:right' href="https://en.wikipedia.org/wiki/Markdown">What is Markdown </a>
+            
+        </div>
+
+</form>        
+{% endblock %}
