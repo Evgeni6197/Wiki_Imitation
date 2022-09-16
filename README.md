@@ -2,10 +2,15 @@
 ## Demonstration can be seen [here](https://youtu.be/ZUncrEivXnU).
 ***
 
+## Description  
+
+
 It is imitated Wiki home page. The options like *search* field, *create new page , edit page* and *random page* are implemented. It is realized functionality  to present search results  as a list of entries, where the query is a substring of the name of every resuting page. The page content while creating or editing is beeing  entered using **Markdown** syntax. All "Wiki" entries used in the project are saved in the *entries/* folder as *.md* files.
 
 
 ***
+
+## Launching
 
 To launch the project  it is needed to install [Django]( https://www.djangoproject.com) 
 
