@@ -1,5 +1,5 @@
 # Wiki_Imitation
-## [Demonstration video](https://youtu.be/ZUncrEivXnU).
+## [Demonstration video](https://youtu.be/ZUncrEivXnU)
 ***
 
 ## Description  
