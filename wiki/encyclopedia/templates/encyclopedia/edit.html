@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+
+
+{% block body %}
+    <form action="{% url  'edit' %}" method="post" autocomplete='off'>
+        {% csrf_token %}
+
+        <textarea name="new_content"  >{{text}}</textarea>
+        
+        <div  class='link_align' >
+            This is Markdown for Wiki entry <b>{{entry_name}}</b> &nbsp;&nbsp
+            <input type="hidden" name='entry_name' value="{{ entry_name}}">
+            <input type ="submit" value='Save'>                                      
+            <a class ='right' href="https://en.wikipedia.org/wiki/Markdown">What is Markdown </a>            
+        </div>
+    </form>        
+{% endblock %}

@@ -1,8 +1,18 @@
 {% extends "encyclopedia/layout.html" %}
 
-
 {% block title %}
     {{title}}
+{% endblock %} 
+
+{% block nav %}
+    {% if  entry_html_content %}
+        <form action="{% url 'edit' %}" method ='get'>
+            <div class="side" >                
+                <input type="hidden" name='entry_name' value="{{ title }}">
+                <input class='bottom' type="submit" value="Edit Page">
+            </div>
+        </form>
+    {% endif %}
 {% endblock %}
 
 {% block body %}
